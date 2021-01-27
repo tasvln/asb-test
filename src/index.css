@@ -3,3 +3,292 @@
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Barlow", sans-serif;
+}
+
+.navbar {
+  box-shadow: inset 0px -1px 0px rgba(220, 225, 231, 0.572143);
+}
+
+.nav-link {
+  color: #778699;
+}
+
+.nav-link-active {
+  background: #deefff;
+  color: #006fd6;
+  font-weight: 700;
+  border-bottom: 4px solid #006fd6;
+}
+
+.custom-input {
+  background: #ffffff;
+  border: 1px solid #dce1e7;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.user {
+  background: #d8d8d8;
+}
+
+.tab-link {
+  color: #778699;
+  font: 300;
+  font-size: 14px;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(192, 192, 192, 0.25);
+  border-radius: 6px;
+}
+
+.card-num {
+  color: #19191d;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.card-sub {
+  color: #9696a0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.table-head {
+  background: #f3f6f9;
+}
+
+table {
+  box-shadow: 0px 4px 30px rgba(192, 192, 192, 0.25);
+  overflow-x: auto;
+}
+
+th {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #899198;
+  font-weight: 500;
+}
+
+td {
+  padding: 20px 20px;
+  background: #fff;
+  box-shadow: inset 0px -1px 0px rgba(183, 183, 183, 0.25);
+}
+
+.check {
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #9f9f9f;
+}
+
+.ta-name {
+  color: #25213b;
+}
+
+.ta-state {
+  color: #25213b;
+}
+
+.ta-sub {
+  color: #878592;
+}
+
+.ta-ni {
+  color: #8c70ff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 12px;
+  border-radius: 9999px;
+  background: #f6f3ff;
+}
+
+.ta-entries {
+  color: #25213b;
+  font-weight: bold;
+}
+
+.ta-lr {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3ab65c;
+}
+
+.ta-mr {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3c3ab6;
+}
+
+.ta-hr {
+  font-weight: 500;
+  font-size: 14px;
+  color: #b63a3a;
+}
+
+.ta-ii {
+  color: #f4b400;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 12px;
+  border-radius: 9999px;
+  background: #fff6de;
+}
+
+.time-line {
+  border-right: 2px dotted #c4c4c4;
+  z-index: 0;
+}
+
+.ta-sec {
+  overflow-x: scroll;
+}
+
+@media (min-width: 200px) and (max-width: 320px) {
+  table {
+    max-width: 280px;
+  }
+  .sec--two {
+    gap: 0;
+  }
+  .hide-phone {
+    display: none;
+  }
+  .phone-show {
+    display: flex;
+  }
+  .sec-nav {
+    overflow-x: scroll;
+  }
+  .note-padd {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .logo-padd {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  th {
+    padding: 15px 50px;
+  }
+  .phone-check {
+    padding: 15px 20px;
+  }
+  .user-padd {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 600px) {
+  table {
+    max-width: 320px;
+  }
+  .sec--two {
+    gap: 0;
+  }
+  .hide-phone {
+    display: none;
+  }
+  .phone-show {
+    display: flex;
+  }
+  .sec-nav {
+    overflow-x: scroll;
+  }
+  .note-padd {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .logo-padd {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  th {
+    padding: 15px 50px;
+  }
+  .phone-check {
+    padding: 15px 20px;
+  }
+  .user-padd {
+    padding-right: 1rem;
+  }
+  .ba-dot {
+    width: 10px !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 1023px) {
+  .sec--two {
+    gap: 0;
+  }
+  .hide-phone {
+    display: none;
+  }
+  .phone-show {
+    display: flex;
+  }
+  .sec-nav {
+    overflow-x: scroll;
+  }
+  .note-padd {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .logo-padd {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  th {
+    padding: 15px 50px;
+  }
+  .phone-check {
+    padding: 15px 20px;
+  }
+  .user-padd {
+    padding-right: 1rem;
+  }
+  .ba-dot {
+    width: 10px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .hide-phone {
+    display: none;
+  }
+  .phone-show {
+    display: flex;
+  }
+  .sec-nav {
+    overflow-x: scroll;
+  }
+  .note-padd {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .logo-padd {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  th {
+    padding: 15px 50px;
+  }
+  .phone-check {
+    padding: 15px 20px;
+  }
+  .user-padd {
+    padding-right: 1rem;
+  }
+  .ba-dot {
+    width: 20px !important;
+  }
+  .text-reduce {
+    font-size: 14px;
+  }
+}
